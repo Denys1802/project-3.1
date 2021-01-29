@@ -99,7 +99,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 999;
   background-color: #fff;
 }
 
@@ -1167,8 +1167,11 @@ body {
   transition: all .15s ease-in-out;
 }
 
-.button__right svg path:active {
+.button__right:hover {
   color: red;
+}
+
+.button__right svg path:hover {
   fill: red;
   -webkit-transition: all .15s ease-in-out;
   -o-transition: all .15s ease-in-out;

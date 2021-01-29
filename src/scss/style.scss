@@ -933,8 +933,11 @@ body {
     justify-content: space-around;
     transition: all .15s ease-in-out;
 
-    & svg path:active {
+    &:hover {
         color: red;
+    }
+
+    svg path:hover {
         fill: red;
         transition: all .15s ease-in-out;
     }
