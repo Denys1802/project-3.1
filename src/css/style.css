@@ -923,7 +923,7 @@ body {
 }
 
 .item-choice__text {
-  ont-weight: 300;
+  font-weight: 300;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.25px;
@@ -1334,10 +1334,17 @@ body {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 
-.footer__column1 .link-menu li a svg:hover path {
-  opacity: 1;
+.footer__column1 .link-menu li a svg path:hover,
+.footer__column1 .link-menu li a :focus {
+  -webkit-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  fill-opacity: 1;
 }
 
 .footer-bottom {
