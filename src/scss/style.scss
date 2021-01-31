@@ -545,113 +545,115 @@ body {
 
 .whoare {
     padding: 148px 0;
-}
 
-.whoare__image {
-    margin: 0 0 0 -149px;
-}
+    .whoare__image {
+        margin: 0 0 0 -149px;
+    }
 
-.whoare__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .whoare__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.whoare__body {
-    flex: 0 0 486px;
-    margin: 0 0 0 126px;
-}
+    .whoare__body {
+        flex: 0 0 486px;
+        margin: 0 0 0 126px;
+    }
 
-.whoare__decor {
-    width: 180px;
-    height: 4px;
-    background: #008464;
-    border-radius: 5px;
-    margin: 0 0 24px 0;
-}
+    .whoare__decor {
+        width: 180px;
+        height: 4px;
+        background: #008464;
+        border-radius: 5px;
+        margin: 0 0 24px 0;
+    }
 
-.whoare__text {
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 33px;
-    letter-spacing: 0.25px;
-    color: rgba(0, 0, 0, 0.87);
-    margin: 0 0 47px 0;
-}
-
-.whoare__subtitle {
-    margin: 0 0 116px 0;
-
-    h4 {
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
+    .whoare__text {
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 33px;
         letter-spacing: 0.25px;
         color: rgba(0, 0, 0, 0.87);
-        margin: 0 0 4px 0;
+        margin: 0 0 47px 0;
     }
 
-    p {
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.15px;
-        color: rgba(0, 0, 0, 0.6);
-    }
-}
+    .whoare__subtitle {
+        margin: 0 0 116px 0;
 
-.whoare__next {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+        h4 {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.25px;
+            color: rgba(0, 0, 0, 0.87);
+            margin: 0 0 4px 0;
+        }
 
-    p {
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 1.25px;
-        text-transform: uppercase;
-        color: rgba(0, 0, 0, 0.87);
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: rgba(0, 0, 0, 0.6);
+        }
     }
 
-    a {
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: center;
-        letter-spacing: 1.25px;
-        text-transform: uppercase;
-        color: rgba(0, 0, 0, 0.87);
+    .whoare__next {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
 
-        .next-link {
+        p {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 1.25px;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.87);
+        }
+
+        a {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            letter-spacing: 1.25px;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.87);
+            display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 0 0 17px;
-            background: #CD9F85;
-            border-radius: 50%;
-            width: 48px;
-            height: 48px;
-            padding: 12px;
-            transition: all .25s ease-in-out;
 
-            path {
-                transition: all .25s ease-in-out;
-            }
-
-            &:hover {
-                background: #1B556D;
+            svg {
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 0 17px;
+                background: #CD9F85;
+                border-radius: 50%;
+                width: 48px;
+                height: 48px;
+                padding: 12px;
                 transition: all .25s ease-in-out;
 
                 path {
-                    fill: #fff;
                     transition: all .25s ease-in-out;
+                }
+
+                &:hover {
+                    background: #1B556D;
+                    transition: all .25s ease-in-out;
+
+                    path {
+                        fill: #fff;
+                        transition: all .25s ease-in-out;
+                    }
                 }
             }
         }
     }
+
 }
+
 
 /*choice*/
 
@@ -891,6 +893,7 @@ body {
 
     &:hover {
         background: #1B556D;
+        font-weight: bold;
         transition: all .25s ease-in-out;
     }
 
@@ -916,15 +919,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    transition: all .15s ease-in-out;
+    transition: all .25s ease-in-out;
 
     &:hover {
-        color: red;
-    }
-
-    svg path:hover {
-        fill: red;
-        transition: all .15s ease-in-out;
+        background: #CD9F85;
+        font-weight: bold;
+        transition: all .25s ease-in-out;
     }
 }
 
@@ -1027,31 +1027,28 @@ body {
         align-items: center;
 
         li {
-            background: #FAFAFA;
+            margin: 0 0 0 7px;
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            margin: 0 0 0 7px;
+            background-color: #fafafa;
             position: relative;
-            transition: all .15s ease-in-out;
 
-            &:hover {
-                box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-                background: #CD9F85;
-                transition: all .15s ease-in-out;
-            }
-
-            a {
+            a svg {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                transition: all .15s ease-in-out;
+            }
 
-                svg path:hover,
-                :focus {
-                    transition: all .15s ease-in-out;
+            &:hover {
+                background: #CD9F85;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                transition: all .25s ease-in-out;
+
+                path {
                     fill-opacity: 1;
+                    transition: all .25s ease-in-out;
                 }
             }
 
